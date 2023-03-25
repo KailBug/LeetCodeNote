@@ -11,11 +11,11 @@ A subarray is a contiguous part of an array.
 链接：https://leetcode.cn/problems/maximum-subarray-min-product
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
-####Ideas of Solving Problems
+#### Ideas of Solving Problems
 
-#HARRRRRRRRRD
+# HARRRRRRRRRD
 
-####*Monotonic Stack(单调栈)
+#### *Monotonic Stack(单调栈)
 
 **1**.The 'min-product' is defind as 'minimum value' multiply 'array sum', because the 'array sum' is difficult to enumerate, we can consider enumerating 'minimumu value';
 **2**.We can enumerate each element *$num_i$* in the array as the minimum value. Since the elements in the array are all postive numbers, the longer the sub array containing *$num_i$* we choose, the better.
@@ -29,7 +29,7 @@ And, closed interval [*$left_i$*,*$right_i$*] is contain minimum value *$num_i$*
 
 **3**.The finnal answer is $$\mathop{max}\limits_{i=0}^{n-1}(num_i\times\sum\limits_{j=left_i+1}^{right_i-1}num_i)$$
 
-####Solution1 in C++
+#### Solution1 in C++
 
 ```c++
 class Solution {
@@ -81,7 +81,7 @@ public:
 };
 ```
 
-####Solution2 in C++
+#### Solution2 in C++
 ```c++
 class Solution {
 private:

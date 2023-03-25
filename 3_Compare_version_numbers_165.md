@@ -14,9 +14,9 @@ Otherwise, return 0.
 链接：https://leetcode.cn/problems/compare-version-numbers
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
-####Ideas of Solving Problems
+#### Ideas of Solving Problems
 
-####Solution1 in c++ 
+#### Solution1 in c++ 
 String segmentation.We can divide the version number into revision numbers based on a dot '.', and then compare the same subscript revision numbers of the two version numbers from left to right. When comparing revision numbers, you need to convert the string to an integer for comparison. **Note**: According to the title requirements, if the revision number does not exist at a subscript, the revision number is considered to be 0.
 
 ```c++
@@ -48,7 +48,7 @@ public:
 time complexity:O(n + m)
 spatial complexity:O(n + m)
 
-####Solution2 in c++
+#### Solution2 in c++
 Solution 1 requires storing the divided revision number. In order to optimize spatial complexity, we can parse the revision number for comparison while dividing the version number.
 
 ```c++

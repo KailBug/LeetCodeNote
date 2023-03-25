@@ -22,7 +22,7 @@ Can you solve it without using additional space?
 链接：https://leetcode.cn/problems/linked-list-cycle-lcci
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
-####Solution1 in C++
+#### Solution1 in C++
 
 **Hash table**.A very intuitive idea is: we traverse each node in the linked list and record it; once we encounter a previously traversed node, we can determine that there is a ring in the linked list. It can be easily implemented with the help of a hash table.
 
@@ -43,7 +43,7 @@ public:
 };
 ```
 
-####Solution2 in c++
+#### Solution2 in c++
 
 **Fast and slow pointer**.We use two pointers, th *fast* and *slow* pointers.They all start at the head of the linklist.The *slow* pointer then moves backwards one position at a time, while the *fast* pointer moves backwards two positions.If there is a ring in the linklist, the *fast* pointer will eventually meet up again with the *slow* pointer in the ring.
 

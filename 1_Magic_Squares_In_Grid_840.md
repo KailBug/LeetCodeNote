@@ -6,14 +6,14 @@ Given a row x col grid of integers, how many 3 x 3 "magic square" subgrids are
 链接：https://leetcode.cn/problems/magic-squares-in-grid
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
-####Ideas of Solving Problems
+#### Ideas of Solving Problems
 
 **1**.the sum of grid is 45, because each grid is different from 1 to 9;
 **2**.Each column and row must add up to 15, multiplied by 3 to sum the grid;
 **3**.The sum of diagonal lines must also be 15. The title says that the sum of diagonal lines is the same as the sum of columns and rows;
 **4**.Add the 12 values of four lines passing through the center (that is, two diagonal lines in a row and a column), and the four lines add up to 60; The entire grid adds up to 45.And the center grid equals (60-45)/3 = 5.
 
-####Solution 1 in c++
+#### Solution 1 in c++
 
 ```c++
 class Solution {
@@ -54,7 +54,7 @@ public:
 };
 ```
 
-####Solution 2 in c++ (Optimal time complexity)
+#### Solution 2 in c++ (Optimal time complexity)
 
 ```c++
 class Solution {
